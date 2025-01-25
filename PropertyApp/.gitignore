@@ -1,0 +1,67 @@
+# Ignore build outputs
+/bin/
+/obj/
+/out/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# User-specific config files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# macOS and Linux specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails and other system files
+Thumbs.db
+ehthumbs.db
+
+# Ignore NuGet package files
+*.nupkg
+*.snupkg
+
+# Ignore generated project files
+*.generated.cs
+*.g.cs
+
+# Ignore .NET MAUI platform-specific files
+**/*.apk
+**/*.aab
+**/*.ipa
+**/*.dSYM
+**/*.pdb
+
+# Ignore config and log files
+*.log
+*.config
+
+# Ignore Xamarin-specific files (for projects that are being migrated)
+xamarin.android/
+xamarin.iOS/
+
+# Ignore the temporary files used by Visual Studio for macOS
+.vscode/
+
+# Ignore Android Studio files (if any)
+*.iml
+.idea/
+
+# Ignore the Visual Studio temporary files (Mac and Windows)
+.vs2019/
+.vs2017/
+
+# JetBrains Rider config files
+.idea/
