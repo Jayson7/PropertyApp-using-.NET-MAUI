@@ -1,4 +1,6 @@
-﻿namespace PropertyApp
+﻿using PropertyApp.View;
+
+namespace PropertyApp
 {
     public partial class App : Application
     {
@@ -9,7 +11,8 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            // Set the root page inside the CreateWindow method
+            return new Window(new NavigationPage(new LandingPage())); // or use AppShell if that's your root
         }
     }
 }
