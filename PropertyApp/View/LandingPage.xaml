@@ -4,10 +4,19 @@
              x:Class="PropertyApp.View.LandingPage"
              NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="Auto, Auto, *" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="32" BackgroundColor="#fefefe" RowSpacing="32">
+        <VerticalStackLayout VerticalOptions="Center" Spacing="5">
+            <Label Text="Welcome back," TextColor="Black" FontAttributes="Bold" FontSize="12" />
+            <Label Text="Jayson" TextColor="Black" FontAttributes="Bold" FontSize="18" />
+           
+            <Border WidthRequest="48" HeightRequest="48" VerticalOptions="Center" HorizontalOptions="End" StrokeShape="RoundRectangle(24, 24, 24, 24)" StrokeThickness="2" Stroke="#4c65ff">
+                <Image Source="profile.jpg" />
+            </Border>
+
+
+
+
+
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

@@ -67,7 +67,6 @@
 	<ItemGroup>
 	  <Folder Include="Model\" />
 	  <Folder Include="Control\" />
-	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 
 	<ItemGroup>
