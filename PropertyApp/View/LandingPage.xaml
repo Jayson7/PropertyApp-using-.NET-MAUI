@@ -11,13 +11,21 @@
         </VerticalStackLayout>
            
             <Border WidthRequest="48" HeightRequest="48" VerticalOptions="Center" HorizontalOptions="End" StrokeShape="RoundRectangle(24, 24, 24, 24)" StrokeThickness="2" Stroke="#4c65ff">
-                <Image Source="profile.jpg" />
+                <Image Source="profile_third.jpg" />
             </Border>
 
         <Grid Grid.Row="1" RowDefinitions="Auto, Auto, Auto" HorizontalOptions="FillAndExpand">
             <Label Text="New York" TextColor="Black" FontAttributes="Bold" FontSize="24" VerticalOptions="Center" />
             <Image Source="map.png" WidthRequest="20" HorizontalOptions="End" VerticalOptions="Center" />
-            <Line Grid.Row="1" X1="1" X2="1000" Stroke="#f0f0f1" />
+            <Line Grid.Row="1" X1="0" X2="1000" Stroke="#f0f0f1" />
+
+            <ScrollView Orientation="Horizontal" Grid.Row="2" HorizontalScrollBarVisibility="Never">
+                <HorizontalStackLayout x:Name="SectionList" Margin="0,20,0,0">
+                    
+                </HorizontalStackLayout>
+                
+                
+            </ScrollView>
             
         </Grid>
 
