@@ -7,16 +7,21 @@
     <Grid RowDefinitions="Auto, Auto, *" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="32" BackgroundColor="#fefefe" RowSpacing="32">
         <VerticalStackLayout VerticalOptions="Center" Spacing="5">
             <Label Text="Welcome back," TextColor="Black" FontAttributes="Bold" FontSize="12" />
-            <Label Text="Jayson" TextColor="Black" FontAttributes="Bold" FontSize="18" />
+            <Label Text="Jayson" TextColor="Black" FontAttributes="Bold" FontSize="16" />
+        </VerticalStackLayout>
            
             <Border WidthRequest="48" HeightRequest="48" VerticalOptions="Center" HorizontalOptions="End" StrokeShape="RoundRectangle(24, 24, 24, 24)" StrokeThickness="2" Stroke="#4c65ff">
                 <Image Source="profile.jpg" />
             </Border>
 
+        <Grid Grid.Row="1" RowDefinitions="Auto, Auto, Auto" HorizontalOptions="FillAndExpand">
+            <Label Text="New York" TextColor="Black" FontAttributes="Bold" FontSize="24" VerticalOptions="Center" />
+            <Image Source="map.png" WidthRequest="40" HorizontalOptions="End" VerticalOptions="Center" />
+            <Line Grid.Row="1" X1="0" X2="1000" Stroke="#f0f0f1" />
+
+        </Grid>
 
 
 
-
-        </VerticalStackLayout>
     </Grid>
 </ContentPage>
