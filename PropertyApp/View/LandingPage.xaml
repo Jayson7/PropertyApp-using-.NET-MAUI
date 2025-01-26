@@ -20,7 +20,13 @@
             <Line Grid.Row="1" X1="0" X2="1000" Stroke="#f0f0f1" />
 
             <ScrollView Orientation="Horizontal" Grid.Row="2" HorizontalScrollBarVisibility="Never">
-                <HorizontalStackLayout x:Name="SectionList" Margin="0,20,0,0">
+                <HorizontalStackLayout x:Name="SectionList" Margin="0,20,0,0" BindableLayout.ItemsSource="{Binding Sections}" Spacing="10">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <RadioButton Content="{Binding}" />
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                    
                     
                 </HorizontalStackLayout>
                 
